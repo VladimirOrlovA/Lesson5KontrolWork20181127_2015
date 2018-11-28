@@ -71,7 +71,7 @@ int main()
 
 	//Task 5.
 
-	float rent, prib, sebes, sebestek = 100;
+	/*float rent, prib, sebes, sebestek = 100;
 
 	printf("¬ведите прибыль и себестоимость в текущем мес€це: \n");
 	scanf_s("%f", &prib);
@@ -80,9 +80,19 @@ int main()
 	if (sebes <= (sebestek - (sebestek*0.05)))
 	{
 		rent = (prib / sebes) * 100;
+		printf("–ентабельность работы предпри€ти€ за мес€ц %f процента \n\n", rent);
 	}
+	else { printf("–ентабельность работы предпри€ти€ не расчитываетс€,\nт.к. снижение себестоимсоти менее 5 процентов \n\n"); }
+	*/
 
+	// Task 6.
 
+	float sec = 43260, m;
+	int h;
+	h = sec / 3600;
+	m = ((sec/60) - h*60);
+
+	printf("%d : %f \n\n", h, m);
 
 	system("pause");
 }
