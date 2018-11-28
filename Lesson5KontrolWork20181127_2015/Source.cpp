@@ -2,10 +2,12 @@
 #include<iostream>
 #include<cmath>
 #include<locale.h>
+#include<time.h>
 
 int main()
 {
 	setlocale(LC_ALL, "");
+	srand(time(NULL));
 
 	//Task 1.
 	/*
@@ -25,8 +27,8 @@ int main()
 	*/
 
 	//Task 3.
-	/*
-	int n;
+	
+	/*int n;
 
 	printf("Введите четное число N : ");
 	scanf_s("%d", &n);
@@ -48,8 +50,8 @@ int main()
 	{
 	printf("Удовлетворяет условию c \n");
 	}
-	else { printf("Не удовлетворяет условию c \n"); }
-	*/
+	else { printf("Не удовлетворяет условию c \n"); }*/
+	
 
 	//Task 4.
 	/*
@@ -87,12 +89,38 @@ int main()
 
 	// Task 6.
 
-	float sec = 43260, m;
-	int h;
-	h = sec / 3600;
+	/*int sec = 45900, h, m;
+	
+	h = (float)sec / 3600;
 	m = ((sec/60) - h*60);
 
-	printf("%d : %f \n\n", h, m);
+	printf("%d : %d \n\n", h, m);*/
 
+	// Task 7.
+
+	
+	int a,b,n = 10 + rand() % 99;
+
+	printf("Случайное число %d \n", n);
+
+	if (n % 2 == 0)
+	{
+		printf("Данное число является четным двузначным\n\n");
+	}
+	else { printf("Данное число является нечетным двузначным\n\n"); }
+
+	a = n / 10;
+	b = n % 10;
+
+		printf("Десятки \"A\" : %d \n", a);
+		printf("Единицы \"B\" : %d \n", b);
+	
+	if (a % 2 == 0 && n / b == 0)
+	{
+		printf("Ровно одно из чисел А и В нечетное\n\n");
+	}
+	
+	
+	
 	system("pause");
 }
